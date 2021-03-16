@@ -15,7 +15,7 @@
   \****************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("const getUsers = __webpack_require__(/*! ./users */ \"./users.js\").getUsers;\n\nfunction addUserToDOM(name) {\n    const node = document.createElement(\"li\");\n    const text = document.createTextNode(name);\n    node.appendChild(text);\n\n    document.getElementById(\"users\")\n        .appendChild(node);\n}\n\ndocument.getElementById(\"submit\")\n    .addEventListener(\"click\", () => {\n        const input = document.getElementById(\"input\");\n        addUserToDOM(input.value);\n\n        input.value = \"\";\n    });\n\nusers = getUsers();\n\nfor (let i = 0; i < users.length; i++) {\n    addUserToDOM(users[i]);\n}\n\n\n//# sourceURL=webpack://webpack-js/./dom.js?");
+eval("const getUsers = __webpack_require__(/*! ./users */ \"./users.js\").getUsers;\n\nfunction addUserToDOM(name) {\n    const node = document.createElement(\"li\");\n    const text = document.createTextNode(name);\n    node.appendChild(text);\n\n    document.getElementById(\"users\")\n        .appendChild(node);\n}\n\ndocument.getElementById(\"submit\")\n    .addEventListener(\"click\", () => {\n        const input = document.getElementById(\"input\");\n        addUserToDOM(input.value);\n\n        input.value = \"\";\n    });\n\nconst users = getUsers();\n\nfor (let i = 0; i < users.length; i++) {\n    addUserToDOM(users[i]);\n}\n\n\n//# sourceURL=webpack://webpack-js/./dom.js?");
 
 /***/ }),
 

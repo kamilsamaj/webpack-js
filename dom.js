@@ -17,7 +17,7 @@ document.getElementById("submit")
         input.value = "";
     });
 
-users = getUsers();
+const users = getUsers();
 
 for (let i = 0; i < users.length; i++) {
     addUserToDOM(users[i]);
